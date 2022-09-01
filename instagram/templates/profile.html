@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+
+<div>
+  <header>
+    <div class="center">
+      <div class="profile-container">
+        <div class="profile-image">
+          <img src="https://raw.githubusercontent.com/comeduschool/instagram/django/reactjs/web/public/assets/test-profile.jpeg" alt="profile" />
+        </div>
+        <div class="profile-user-settings">
+          <h1 class="profile-user-name">comedu</h1>
+          <button class="btn profile-edit-btn">프로필 편집</button>
+          <button class="btn profile-settings-btn" aria-label="profile settings">
+            <img src="https://raw.githubusercontent.com/comeduschool/instagram/django/reactjs/web/public/assets/icons/setting.svg" alt="" />
+          </button>
+        </div>
+        <div class="profile-stats">
+          <ul>
+            <li><span class="profile-stat-count">164</span> posts</li>
+            <li><span class="profile-stat-count">0</span> followers</li>
+            <li><span class="profile-stat-count">0</span> following</li>
+          </ul>
+        </div>
+        <div class="profile-bio">
+          <p><span class="profile-real-name">comedu</span>hi instagram clone</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="feeds">
+    <div class="feed">
+      <div class="feed-header">
+        <div class="feed-header-content">
+          <div class="feed-header-profile-containter">
+            <img class="feed-header-profile" src="https://raw.githubusercontent.com/comeduschool/instagram/django/reactjs/web/public/assets/test-profile.jpeg" alt="test profile" />
+            <p class="feed-header-username">comedu</p>
+          </div>
+          <img src="https://raw.githubusercontent.com/comeduschool/instagram/django/reactjs/web/public/assets/icons/more.svg" alt="more icon" />
+        </div>
+      </div>
+      <div class="feed-content-image">
+        <div>
+          <img class="feed-image" src="https://raw.githubusercontent.com/comeduschool/instagram/django/reactjs/web/public/assets/test-image01.jpg" alt="test image"/>
+        </div>
+      </div>
+      <div class="feed-content">
+        <div class="feed-content-icons">
+          <span class="feed-content-icon">
+            <img src="https://raw.githubusercontent.com/comeduschool/instagram/django/reactjs/web/public/assets/icons/favorite-outlined.svg" alt="favorite icon"/>
+          </span>
+          <span class="feed-content-icon">
+            <img src="https://raw.githubusercontent.com/comeduschool/instagram/django/reactjs/web/public/assets/icons/reply-outlined.svg" alt="comment icon"/>
+          </span>
+          <span class="feed-content-icon">
+            <img src="https://raw.githubusercontent.com/comeduschool/instagram/django/reactjs/web/public/assets/icons/send-outlined.svg" alt="message icon"/>
+          </span>
+          <span class="feed-content-icon-left">
+            <img src="https://raw.githubusercontent.com/comeduschool/instagram/django/reactjs/web/public/assets/icons/saved-outlined.svg" alt="save icon"/>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+{% endblock %}
