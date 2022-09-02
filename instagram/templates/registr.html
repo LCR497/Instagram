@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+
+<div class="center-rg">
+  <form class="form">
+    <img class="form-logo" src="https://www.instagram.com/static/images/web/logged_out_wordmark-2x.png/d2529dbef8ed.png" alt="logo.png"/>
+    <input class="form-input" type="text" placeholder="이메일" />
+    <input class="form-input" type="password" placeholder="비밀번호" />
+    <button class="form-btn form-btn-blue" type="submit" disabled={!isValid}>Войти</button>
+    <a class="password-link link-noline" href="#"><span class="password-link-text"> Забыли свой пароль для входа в систему?</span></a>
+  </form>
+  <div class="center-item">
+    Нет аккаунта? <a class="signup-link">Регистрация</a>
+  </div>
+</div>
+
+{% endblock %}
+
+
+
